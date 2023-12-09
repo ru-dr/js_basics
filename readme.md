@@ -2,6 +2,12 @@
 
 This repository contains a collection of notes and code examples covering the fundamentals of JavaScript. Each topic is explained in detail, providing a comprehensive understanding of the concepts.
 
+## Recommended Extensions
+- Quokka.js
+- Prettier - Code formatter
+- Bracket Pair Colorizer
+- console Ninja
+
 ## Table of Contents
 
 - [Let, Const, and Var](#let-const-and-var)
