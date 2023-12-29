@@ -34,3 +34,23 @@ console.log(Object.values(grocery));
 
 //> check if the object has a particular key
 console.log(grocery.hasOwnProperty("potato"));
+
+//> object destructuring
+const movies = {
+  movieName: "Interstellar",
+  year: 2014,
+  director: "Christopher Nolan",
+  genre: "Sci-Fi",
+};
+
+const { movieName, year, director, genre } = movies;
+console.log(movieName, year, director, genre);
+
+//> Other way
+const {
+  movieName: nameOfMovie,
+  year: releaseYear,
+  director: by,
+  genre: type,
+} = movies;
+console.log(nameOfMovie, releaseYear, by, type);
