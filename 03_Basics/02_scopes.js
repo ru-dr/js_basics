@@ -39,5 +39,23 @@ if (true) {
     const b = "World";
     console.log(a);
   }
-  console.log(b); //! this gives us the error because the b is not defined in this scope.
+  // console.log(b); //! this gives us the error because the b is not defined in this scope.
+}
+
+// =========================== some tempting example =========================== //
+
+//> Example 1
+
+function add(val, val2) {
+  return val + val2;
+}
+
+console.log(add(2, 3)); //note: we can call the function before the function declaration because of the hoisting.
+
+//> Example 2
+
+console.log(sub(2, 3)); //note: we can't call the function before the function declaration because of the hoisting.
+
+const sub = function (val, val2) {
+  return val - val2;
 }
