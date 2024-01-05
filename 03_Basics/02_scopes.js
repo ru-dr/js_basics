@@ -26,7 +26,18 @@ function food() {
     const nonveg = "chicken";
     console.log("Inside the function: ", veg);
   }
-
-  
+  console.log(nonveg);
+  nonveg();
 }
+food();
 
+//> Some Example
+
+if (true) {
+  const a = "Hello";
+  if (true) {
+    const b = "World";
+    console.log(a);
+  }
+  console.log(b); //! this gives us the error because the b is not defined in this scope.
+}
