@@ -1,0 +1,18 @@
+body {
+  background-color: #121212;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main p {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  padding: 20px;
+  background-color: #fffffa;
+  color: #000;
+}
