@@ -1,28 +1,36 @@
-// Play.test.js
-const { testFunc } = require("./Play");
+// const { findLastIndex } = require("./Play");
 
-describe("testFunc", () => {
-  test("Test Case 1", () => {
-    expect(testFunc(1, 2)).toBe(2);
-  });
+// describe("findLastIndex", () => {
+//   test("empty array", () => {
+//     expect(findLastIndex([], (value) => value > 5)).toEqual(-1);
+//   });
 
-  test("Test Case 2", () => {
-    expect(testFunc(1)).toBe(1);
-  });
+//   test("returns the index of the last element that satisfies the predicate", () => {
+//     expect(findLastIndex([1, 2, 3, 4, 5], (value) => value > 2)).toEqual(4);
+//   });
 
-  test("Test Case 3", () => {
-    expect(testFunc()).toBe(0);
-  });
+//   test("no element satisfies the predicate", () => {
+//     expect(findLastIndex([1, 2, 3, 4, 5], (value) => value > 5)).toEqual(-1);
+//   });
 
-  test("Test Case 4", () => {
-    expect(testFunc(5, 10, 15, 20)).toBe(4);
-  });
+//   test("starts the search from the given index", () => {
+//     expect(findLastIndex([1, 2, 3, 4, 5], (value) => value < 4, 3)).toEqual(2);
+//   });
 
-  test("Test Case 5", () => {
-    expect(testFunc("a", "b", "c")).toBe(3);
-  });
+//   test("handles negative fromIndex", () => {
+//     expect(findLastIndex([1, 2, 3, 4, 5], (value) => value > 3, -2)).toEqual(3);
+//   });
 
-  test("Test Case 6", () => {
-    expect(testFunc(null, undefined, false)).toBe(3);
-  });
-});
+//   test("handles negative out of bound indices", () => {
+//     expect(
+//       findLastIndex([1, 2, 3, 4, 5], (value) => value % 2 === 0, -10)
+//     ).toEqual(-1);
+//     expect(findLastIndex([1, 2, 3, 4, 5], (value) => value < 2, -100)).toEqual(
+//       0
+//     );
+//   });
+
+//   test("handles out of bound indices", () => {
+//     expect(findLastIndex([1, 2, 3, 4, 5], (value) => value > 3, 10)).toEqual(4);
+//   });
+// });
